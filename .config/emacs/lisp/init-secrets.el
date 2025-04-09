@@ -8,9 +8,4 @@
 (setup pinentry
   (:straight pinentry)
   (pinentry-start))
-
-(setup pass
-  (:straight pass)
-  (:after auth-source
-    (auth-source-pass-enable)))
 (provide 'init-secrets)
